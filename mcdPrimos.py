@@ -38,10 +38,11 @@ def mcdprimo(a,b):
 		print d
 		if primo(d)==True:
 			cont += 1  
-    	print "Hay", cont, "numero(s) primo(s)"  
-    	print "Es el numero(s): ",d 	        
+    	return d,cont        
             
-mcdprimo(560,1547)
+numero,contador=mcdprimo(1547,560)
+print "Hay", contador, "numero(s) primo(s)"  
+print "Es el numero(s): ", numero 	
 
 #otra forma de sacar mcd es con modulo (:
 def gcd(a,b):
