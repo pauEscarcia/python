@@ -1,6 +1,7 @@
 def intercambiar(a,b):
-	a=b
-	b=a
+	a1=b
+	b1=a
+	return a1,b1
 
 def primo(num):
     if num < 2: 
@@ -11,8 +12,8 @@ def primo(num):
     return True    
 
 def mcd(a,b):
-	if a<b:
-		intercambiar(a,b)
+	if a<b:	
+		a,b=intercambiar(a,b)
 	n=a
 	d=b
 	r= n-(d * (n/d))
@@ -22,10 +23,11 @@ def mcd(a,b):
 		r= n -(d*(n/d))
 		print d
 
+
 def mcdprimo(a,b):
 	cont=0
 	if a<b:
-		intercambiar(a,b)
+		a,b=intercambiar(a,b)
 	n=a
 	d=b
 	r= n-(d * (n/d))
@@ -36,10 +38,10 @@ def mcdprimo(a,b):
 		print d
 		if primo(d)==True:
 			cont += 1  
-    	print "Hay", cont, "numeros primos"  
+    	print "Hay", cont, "numero(s) primo(s)"  
     	print "Es el numero(s): ",d 	        
             
-mcdprimo(1547,560)
+mcdprimo(560,1547)
 
 #otra forma de sacar mcd es con modulo (:
 def gcd(a,b):
