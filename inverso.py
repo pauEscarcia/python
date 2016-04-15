@@ -19,7 +19,7 @@ def egcd(a, b):
 def modinv(a, b):
     gcd, x, y = egcd(a, b)
     if gcd != 1:
-        return None  # modular inverso no existe
+        return None  # inverso modular no existe
     else: 	
         return x % b
 
