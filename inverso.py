@@ -1,15 +1,16 @@
 #modular inverse 101 mod 1999, 
 
 def intercambiar(a,b):
-	a=b
-	b=a
+	a1=b
+	b1=a
+	return a1,b1
 def egcd(a, b):
 	x=0
 	y=1
 	u=1
 	v=1
 	if a<b:
-		intercambiar(a,b)
+		a,b=intercambiar(a,b)
 	while a != 0:
 		q, r = b // a, b % a
 		m, n = x - u * q, y - v * q
