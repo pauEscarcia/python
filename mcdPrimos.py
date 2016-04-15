@@ -35,7 +35,7 @@ def mcdprimo(a,b):
 		n=d
 		d=r
 		r= n -(d*(n/d))
-		print d
+		print n
 		if primo(d)==True:
 			cont += 1  
     	return d,cont        
