@@ -37,7 +37,7 @@ def mcdprimo(a,b):
 		if primo(d)==True:
 			cont += 1  
     	print "Hay", cont, "numeros primos"  
-    	print "Que son: ",d 	        
+    	print "Es el numero(s): ",d 	        
             
 mcdprimo(1547,560)
 
