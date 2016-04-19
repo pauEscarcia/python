@@ -1,3 +1,5 @@
+from time import time
+
 def MCDB (a,p):
     u = a
     v = p 
@@ -27,4 +29,9 @@ def MCDB (a,p):
     else:
     	return x2 % p
 
+tiempo_inicial = time() 
 print MCDB (5,101)
+tiempo_final = time() 
+tiempo_ejecucion = tiempo_final - tiempo_inicial
+print 'El tiempo de ejecucion fue:',tiempo_ejecucion, 'Seg.'
+
